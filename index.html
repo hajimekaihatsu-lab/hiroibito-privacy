@@ -5,110 +5,375 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>プライバシーポリシー｜拾人 -ひろいびと-</title>
 <style>
-  body{
-    font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
-    line-height:1.9; color:#1b1f27; background:#fff;
-    max-width:720px; margin:0 auto; padding:40px 20px 80px;
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; padding: 24px 20px 80px; max-width: 760px;
+    font-family: system-ui, -apple-system, "Hiragino Kaku Gothic ProN",
+                 "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+    line-height: 1.85; color: #1b1b1b; background: #fbfaf7;
   }
-  h1{font-size:24px; border-bottom:2px solid #1b1f27; padding-bottom:12px; margin-bottom:8px}
-  h2{font-size:18px; margin-top:36px; padding-top:8px; border-top:1px solid #e0e3ea}
-  .meta{color:#666; font-size:14px; margin:0 0 24px}
-  table{border-collapse:collapse; width:100%; margin-top:12px; font-size:15px}
-  th,td{border:1px solid #e0e3ea; padding:8px 12px; text-align:left; vertical-align:top}
-  th{background:#f5f6f9; width:36%}
-  ul{padding-left:22px}
-  li{margin-bottom:6px}
-  .en{margin-top:56px; padding-top:24px; border-top:3px double #1b1f27; color:#333}
-  .en h2{border-top:1px solid #e0e3ea}
-  code{background:#f5f6f9; padding:2px 5px; border-radius:3px; font-size:.92em}
+  @media (prefers-color-scheme: dark) {
+    body { color: #e9e8e3; background: #17181a; }
+    td, th { border-color: #3a3c40 !important; }
+    hr { border-color: #3a3c40 !important; }
+    .note { background: #202226 !important; border-color: #3a3c40 !important; }
+  }
+  h1 { font-size: 1.55rem; line-height: 1.4; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 40px 0 10px; padding-bottom: 6px;
+       border-bottom: 2px solid #c8983f; }
+  h3 { font-size: 1rem; margin: 24px 0 6px; }
+  .sub { margin: 0 0 28px; opacity: .7; font-size: .9rem; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: .95rem; }
+  th, td { border: 1px solid #d6d2c8; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: rgba(200,152,63,.14); font-weight: 600; }
+  .note { background: #f3efe6; border: 1px solid #e0d9c8; padding: 12px 14px; border-radius: 6px; }
+  hr { border: 0; border-top: 1px solid #d6d2c8; margin: 56px 0 32px; }
+  ul { padding-left: 1.3em; }
+  code { font-size: .92em; background: rgba(127,127,127,.15); padding: 1px 5px; border-radius: 3px; }
+  .scroll { overflow-x: auto; }
+  footer { margin-top: 48px; font-size: .85rem; opacity: .65; }
 </style>
 </head>
 <body>
 
 <h1>プライバシーポリシー</h1>
-<p class="meta">
+<p class="sub">
   アプリ名：拾人 -ひろいびと- 〜神造武具トレハン・ハクスラRPG〜<br>
-  デベロッパー：hajime kaihatsu<br>
-  制定日：2026年9月7日／最終更新：2026年9月7日
+  パッケージ名：<code>com.hajimekaihatsu.hiroibito</code><br>
+  制定日：2026年9月7日／最終更新：2026年9月23日
 </p>
 
-<p>本ポリシーは、hajime kaihatsu（以下「当開発者」）が提供する Android アプリケーション「拾人 -ひろいびと-」（以下「本アプリ」）における、利用者の情報の取り扱いについて定めるものです。</p>
+<h2>1. はじめに</h2>
+<p>
+  hajime kaihatsu（以下「開発者」）は、Android アプリ「拾人 -ひろいびと-」（以下「本アプリ」）における
+  利用者の情報の取り扱いについて、以下のとおり定めます。
+</p>
+<p class="note">
+  <strong>開発者は、利用者の情報を自ら収集したり、受け取ったりすることはありません。</strong>
+  ゲームの進行状況はすべて利用者の端末の中だけに保存されます。<br>
+  <strong>ただし、本アプリには広告（Google AdMob）が含まれており、広告の配信のために
+  一部の情報が Google に送信されます。</strong>詳しくは3章をご覧ください。
+</p>
 
-<h2>1. 収集する情報</h2>
-<p><strong>本アプリは、利用者の個人情報を一切収集しません。</strong></p>
-<p>本アプリは端末内で完結して動作し、以下のいずれも行いません。</p>
+<h2>2. 開発者について</h2>
+<table>
+  <tr><th>開発者名</th><td>hajime kaihatsu</td></tr>
+  <tr><th>所在</th><td>日本</td></tr>
+  <tr><th>連絡先</th><td>k.gamekaihatsu@gmail.com</td></tr>
+</table>
+
+<h2>3. 広告について</h2>
+<p>
+  本アプリは、Google LLC が提供する広告配信サービス <strong>Google AdMob</strong> を利用しています。
+  広告は、利用者が自分で「広告を見る」と選んだときにだけ再生される動画広告（リワード広告）です。
+  <strong>広告を見るかどうかは常に任意で、見なくてもゲームは最後まで遊べます。</strong>
+</p>
+
+<h3>3-1. 外部に送信される情報と、その送信先</h3>
+<p>広告の配信にあたり、利用者の端末から次の情報が Google に送信されます。</p>
+<div class="scroll">
+<table>
+  <tr><th>送信される情報</th><th>内容</th><th>送信先</th><th>利用目的</th></tr>
+  <tr>
+    <td>IPアドレス</td>
+    <td>端末の IP アドレス。おおよその地域の推定に使われることがあります</td>
+    <td>Google LLC</td>
+    <td>広告の配信・分析・不正防止</td>
+  </tr>
+  <tr>
+    <td>広告ID（AAID）ほかの識別子</td>
+    <td>Android 広告 ID、App set ID などの識別子</td>
+    <td>Google LLC</td>
+    <td>広告の配信・分析・不正防止</td>
+  </tr>
+  <tr>
+    <td>アプリの操作情報</td>
+    <td>アプリの起動、タップ、動画の視聴といった操作の記録</td>
+    <td>Google LLC</td>
+    <td>広告の配信・分析・不正防止</td>
+  </tr>
+  <tr>
+    <td>診断情報</td>
+    <td>アプリと広告SDKの動作に関する情報（起動時間、応答が止まった割合、消費電力など）</td>
+    <td>Google LLC</td>
+    <td>分析・不正防止</td>
+  </tr>
+</table>
+</div>
+<p>
+  これらは <strong>すべて TLS（Transport Layer Security）で暗号化して送信されます。</strong>
+  開発者はこれらの情報を受け取りません。開発者が Google から受け取るのは、
+  <strong>個人を特定できない集計値（広告の表示回数や収益額）のみ</strong>です。
+</p>
+<p>
+  Google における情報の取り扱いについては、次をご覧ください。
+</p>
 <ul>
-  <li>氏名・メールアドレス・電話番号・住所などの個人情報の取得</li>
-  <li>位置情報の取得</li>
-  <li>連絡先・写真・カメラ・マイクへのアクセス</li>
-  <li>広告識別子（広告ID / AD_ID）の取得および利用</li>
-  <li>利用状況・行動履歴の解析および外部への送信</li>
-  <li>アカウント登録またはログイン</li>
+  <li>Google プライバシー ポリシー：<a href="https://policies.google.com/privacy?hl=ja">https://policies.google.com/privacy</a></li>
+  <li>Google が広告で情報を使用する方法：<a href="https://policies.google.com/technologies/ads?hl=ja">https://policies.google.com/technologies/ads</a></li>
 </ul>
 
-<h2>2. セーブデータの取り扱い</h2>
-<p>ゲームの進行状況（到達階層、所持品、キャラクターの成長状況など）は<strong>利用者の端末内にのみ保存され、外部のサーバーへ送信されることはありません。</strong>当開発者がこれらのデータを閲覧・取得することはできません。</p>
+<h3>3-2. 広告のパーソナライズを止めるには</h3>
+<p>
+  広告IDは、端末の設定からいつでもリセット・削除できます。
+</p>
+<ul>
+  <li><strong>広告IDをリセットする／削除する：</strong>端末の「設定」→「プライバシー」または「Google」→「広告」から操作できます（表記は端末により異なります）</li>
+  <li><strong>広告のパーソナライズをオフにする：</strong>同じ画面の「広告のパーソナライズをオプトアウト」で設定できます。オフにしても広告は表示されますが、興味・関心に基づいたものではなくなります</li>
+  <li><strong>Google の広告設定：</strong><a href="https://myadcenter.google.com/">https://myadcenter.google.com/</a></li>
+</ul>
 
-<h2>3. 情報の保持と削除</h2>
+<h2>4. 端末内にのみ保存される情報</h2>
+<p>
+  本アプリは、ゲームを続きから遊べるようにするため、以下を利用者の端末内にのみ保存します。
+  <strong>これらが端末の外に出ることはありません。</strong>広告の配信にも使われません。
+</p>
 <table>
-  <tr><th>保持される場所</th><td>利用者の端末内のみ</td></tr>
-  <tr><th>保持期間</th><td>本アプリが端末にインストールされている間</td></tr>
-  <tr><th>削除の方法</th><td>本アプリをアンインストールする、または端末の「設定 → アプリ → 拾人 → ストレージ → データを削除」を実行することで、保存されたすべてのデータが削除されます</td></tr>
-  <tr><th>削除の申請</th><td>データは当開発者の管理下に存在しないため、削除を当開発者に申請する必要はありません</td></tr>
+  <tr><th>保存するもの</th><th>内容</th><th>保存場所</th></tr>
+  <tr>
+    <td>セーブデータ</td>
+    <td>所持金、持ち物、装備、レベル、到達階、技の習得状況、武具帳・秘宝帳の記録など、ゲームの進行状況</td>
+    <td>本アプリ専用の保存領域内のファイル（<code>save.json</code>）</td>
+  </tr>
+  <tr>
+    <td>設定</td>
+    <td>操作の案内を表示済みかどうか、階段の自動処理の入切、倍速の利用状況、音量、表示言語などの環境設定</td>
+    <td>Android の標準的なアプリ設定領域（SharedPreferences）</td>
+  </tr>
 </table>
-
-<h2>4. 情報の安全な取り扱い</h2>
-<p>本アプリは外部との通信を行わず、利用者の情報を送信・保管しません。そのため、通信経路上またはサーバー上での情報漏洩のリスクは存在しません。端末内のデータは、Android の標準的なアプリケーションサンドボックスによって他のアプリから保護されます。</p>
-
-<h2>5. 第三者への提供</h2>
-<p>収集する情報が存在しないため、第三者への提供・販売・共有は一切行いません。</p>
-
-<h2>6. 第三者サービスの利用</h2>
-<p><strong>現在のバージョンでは、広告配信サービス、アクセス解析サービス、クラッシュレポートサービスを含む、いかなる第三者サービスも利用していません。</strong></p>
-<p>将来、広告配信サービス等を導入する場合は、本ポリシーを事前に更新し、取得される情報の種類と利用目的を明記します。</p>
-
-<h2>7. 子どものプライバシー</h2>
-<p>本アプリは個人情報を収集しないため、年齢を問わず安全にご利用いただけます。13歳未満の利用者から意図的に個人情報を収集することはありません。</p>
-
-<h2>8. 本ポリシーの変更</h2>
-<p>本ポリシーの内容は、法令の変更や本アプリの機能追加に応じて変更されることがあります。重要な変更を行う場合は、本ページ上で改定日を更新して周知します。</p>
-
-<h2>9. お問い合わせ</h2>
-<p>本ポリシーおよび本アプリに関するお問い合わせは、下記までご連絡ください。</p>
-<table>
-  <tr><th>デベロッパー名</th><td>hajime kaihatsu</td></tr>
-  <tr><th>メールアドレス</th><td>k.gamekaihatsu@gmail.com</td></tr>
-</table>
-
-<div class="en">
-<h1 style="font-size:22px">Privacy Policy</h1>
-<p class="meta">
-  App: Hiroibito<br>
-  Developer: hajime kaihatsu<br>
-  Effective: September 7, 2026 / Last updated: September 7, 2026
+<p>
+  いずれも本アプリ専用の領域に保存され、他のアプリからは読み取れません。
+  個人を特定できる情報は含まれません。
 </p>
 
-<h2>1. Information We Collect</h2>
-<p><strong>This app does not collect any personal information.</strong> It runs entirely on the user's device and does not collect names, email addresses, phone numbers, addresses, location data, contacts, photos, camera or microphone data, advertising identifiers (AD_ID), or usage analytics. No account registration or sign-in is required.</p>
+<h2>5. 収集しない情報</h2>
+<p>本アプリは、3章に記載したもの以外に、以下をはじめとするいかなる情報も収集・送信しません。</p>
+<ul>
+  <li>氏名、メールアドレス、電話番号、住所などの個人を特定できる情報</li>
+  <li>GPS などによる正確な位置情報</li>
+  <li>連絡先、写真、カメラ、マイク、端末内のファイル</li>
+  <li>他のアプリのインストール状況</li>
+  <li>ウェブの閲覧履歴</li>
+</ul>
+<p>
+  本アプリはアカウント登録やログインの仕組みを持ちません。
+  <strong>広告SDK 以外に、解析ツールやその他の第三者製 SDK は組み込んでいません。</strong>
+  ゲーム本体は通信を行わず、機内モードのままでも最後まで遊べます（そのあいだ広告は表示されません）。
+</p>
 
-<h2>2. Save Data</h2>
-<p>Game progress is stored <strong>only on the user's device</strong> and is never transmitted to any server. The developer cannot access this data.</p>
+<h2>6. 情報の保持と削除</h2>
+<ul>
+  <li>4章のデータは、本アプリが端末にインストールされている間、保持されます。</li>
+  <li><strong>本アプリをアンインストールすると、これらのデータはすべて端末から削除されます。</strong></li>
+  <li>アプリを残したまま消したい場合は、端末の「設定」→「アプリ」→「拾人 -ひろいびと-」→「ストレージ」→「データを削除」で消去できます。</li>
+  <li><strong>広告IDは、端末の設定からいつでもリセット・削除できます</strong>（3-2 をご覧ください）。</li>
+  <li>
+    <strong>開発者に対する削除のご請求は受け付けていません。</strong>
+    アカウントの仕組みがなく、開発者は利用者を特定できる情報を一切持っていないため、
+    開発者側に削除すべきデータが存在しないためです。
+    Google に送信された情報については、上記の広告IDのリセットおよび Google の広告設定をご利用ください。
+  </li>
+</ul>
 
-<h2>3. Data Retention and Deletion</h2>
-<p>Data is retained on the device only while the app is installed. Users can delete all stored data by uninstalling the app, or via <code>Settings → Apps → Hiroibito → Storage → Clear data</code>. No deletion request to the developer is necessary, as the developer holds no user data.</p>
+<h2>7. 第三者への提供</h2>
+<p>
+  開発者が利用者の情報を第三者に提供、共同利用、売買することはありません。
+  <strong>3章に記載した広告の配信のための送信を除きます。</strong>
+</p>
 
-<h2>4. Security</h2>
-<p>The app does not communicate with external servers and does not transmit or store user information. On-device data is protected by Android's standard application sandbox.</p>
+<h2>8. 権限について</h2>
+<p>
+  本アプリは、位置情報・連絡先・カメラ・マイク・写真・ストレージなどの機微な権限を要求しません。
+  <strong>広告の配信のため、インターネット接続の権限と広告ID の権限
+  （<code>com.google.android.gms.permission.AD_ID</code>）を使用します。</strong>
+</p>
 
-<h2>5. Third Parties</h2>
-<p>No information is shared, sold, or disclosed to third parties. <strong>The current version uses no third-party services</strong>, including advertising networks, analytics, and crash reporting. If such services are introduced in the future, this policy will be updated beforehand.</p>
+<h2>9. お子様の利用について</h2>
+<p>
+  本アプリは13歳未満のお子様を対象として設計されたものではなく、
+  お子様から意図的に情報を収集することはありません。
+  お子様が本アプリを利用される場合は、保護者の方の管理のもとでご利用ください。
+</p>
 
-<h2>6. Children's Privacy</h2>
-<p>This app collects no personal information and is safe for users of any age. We do not knowingly collect personal information from children under 13.</p>
+<h2>10. 配信地域</h2>
+<p>
+  本アプリは<strong>日本国内のみ</strong>で配信しています。
+</p>
 
-<h2>7. Contact</h2>
-<p>hajime kaihatsu — k.gamekaihatsu@gmail.com</p>
+<h2>11. 本ポリシーの変更</h2>
+<p>
+  本アプリの機能追加にともない、本ポリシーを変更することがあります。
+  <strong>情報の取り扱いに変更が生じる機能を追加する場合は、
+  その機能を含むバージョンを配信する前に本ポリシーを改訂し、このページを更新します。</strong>
+  変更後の内容は、このページに掲載した時点から適用されます。
+</p>
+
+<h2>12. お問い合わせ</h2>
+<p>
+  本ポリシーまたは本アプリについてのお問い合わせは、上記の連絡先までお願いします。
+</p>
+
+<hr>
+
+<h1 id="en">Privacy Policy</h1>
+<p class="sub">
+  App: Hiroibito (拾人 -ひろいびと-)<br>
+  Package: <code>com.hajimekaihatsu.hiroibito</code><br>
+  Effective: September 7, 2026 / Last updated: September 23, 2026
+</p>
+
+<h2>1. Summary</h2>
+<p class="note">
+  <strong>The developer does not collect or receive any user data.</strong>
+  All game progress is stored only on the user's own device.<br>
+  <strong>However, this app contains advertising (Google AdMob), and some information is sent
+  to Google in order to serve those ads.</strong> See section 3.
+</p>
+
+<h2>2. Developer</h2>
+<table>
+  <tr><th>Developer</th><td>hajime kaihatsu</td></tr>
+  <tr><th>Location</th><td>Japan</td></tr>
+  <tr><th>Contact</th><td>k.gamekaihatsu@gmail.com</td></tr>
+</table>
+
+<h2>3. Advertising</h2>
+<p>
+  This app uses <strong>Google AdMob</strong>, an advertising service provided by Google LLC.
+  Ads are rewarded video ads that play only when the user chooses to watch one.
+  <strong>Watching an ad is always optional, and the game can be completed without ever watching one.</strong>
+</p>
+
+<h3>3-1. Information sent off the device, and to whom</h3>
+<div class="scroll">
+<table>
+  <tr><th>Information</th><th>Details</th><th>Recipient</th><th>Purpose</th></tr>
+  <tr>
+    <td>IP address</td>
+    <td>The device's IP address, which may be used to estimate its general location</td>
+    <td>Google LLC</td>
+    <td>Advertising, analytics, fraud prevention</td>
+  </tr>
+  <tr>
+    <td>Advertising ID (AAID) and other identifiers</td>
+    <td>Android advertising ID, app set ID</td>
+    <td>Google LLC</td>
+    <td>Advertising, analytics, fraud prevention</td>
+  </tr>
+  <tr>
+    <td>App interactions</td>
+    <td>App launches, taps, and video views</td>
+    <td>Google LLC</td>
+    <td>Advertising, analytics, fraud prevention</td>
+  </tr>
+  <tr>
+    <td>Diagnostic information</td>
+    <td>Performance of the app and the ads SDK (launch time, hang rate, energy usage)</td>
+    <td>Google LLC</td>
+    <td>Analytics, fraud prevention</td>
+  </tr>
+</table>
 </div>
+<p>
+  <strong>All of this is encrypted in transit using TLS.</strong>
+  The developer does not receive any of it. The only thing the developer receives from Google is
+  <strong>aggregate, non-identifying figures</strong> such as impression counts and revenue.
+</p>
+<ul>
+  <li>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+  <li>How Google uses information in advertising: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></li>
+</ul>
+
+<h3>3-2. Opting out of personalised ads</h3>
+<ul>
+  <li><strong>Reset or delete your advertising ID:</strong> Settings → Privacy (or Google) → Ads on your device. The exact wording varies by device.</li>
+  <li><strong>Opt out of ad personalisation:</strong> the same screen. Ads will still appear, but will not be based on your interests.</li>
+  <li><strong>Google Ad Settings:</strong> <a href="https://myadcenter.google.com/">https://myadcenter.google.com/</a></li>
+</ul>
+
+<h2>4. Data stored on the device only</h2>
+<p>
+  To let players resume the game, the app stores the following on the device only.
+  <strong>This data never leaves the device</strong> and is not used for advertising.
+</p>
+<table>
+  <tr><th>Item</th><th>Contents</th><th>Where</th></tr>
+  <tr>
+    <td>Save data</td>
+    <td>Money, inventory, equipment, level, deepest floor reached, learned skills, collection records</td>
+    <td>A file in the app's private storage (<code>save.json</code>)</td>
+  </tr>
+  <tr>
+    <td>Settings</td>
+    <td>Whether the control hint has been shown, stairs auto-descend on/off, fast-forward usage, volume, display language</td>
+    <td>Android SharedPreferences (app-private)</td>
+  </tr>
+</table>
+
+<h2>5. Data we do not collect</h2>
+<p>Apart from what is described in section 3, the app collects none of the following:</p>
+<ul>
+  <li>Personally identifiable information (name, email, phone number, address)</li>
+  <li>Precise location such as GPS</li>
+  <li>Contacts, photos, camera, microphone, or files on the device</li>
+  <li>Installed apps</li>
+  <li>Web browsing history</li>
+</ul>
+<p>
+  The app has no account or login system.
+  <strong>No analytics or other third-party SDKs are included besides the ads SDK.</strong>
+  The game itself performs no network communication and can be played to the end in airplane mode
+  (no ads will be shown while offline).
+</p>
+
+<h2>6. Retention and deletion</h2>
+<ul>
+  <li>The data in section 4 is kept for as long as the app is installed.</li>
+  <li><strong>Uninstalling the app deletes all of it from the device.</strong></li>
+  <li>To clear it while keeping the app: Settings → Apps → Hiroibito → Storage → Clear data.</li>
+  <li><strong>The advertising ID can be reset or deleted at any time from the device settings</strong> (see 3-2).</li>
+  <li>
+    <strong>The developer does not accept deletion requests.</strong> There is no account system and the
+    developer holds no information that could identify a user, so there is nothing for the developer to delete.
+    For information sent to Google, please use the advertising ID reset and Google Ad Settings above.
+  </li>
+</ul>
+
+<h2>7. Sharing</h2>
+<p>
+  The developer does not share, sell, or transfer user data to third parties,
+  <strong>other than the transmission described in section 3 for the purpose of serving ads.</strong>
+</p>
+
+<h2>8. Permissions</h2>
+<p>
+  The app requests no sensitive permissions such as location, contacts, camera, microphone, or storage.
+  <strong>It uses the internet permission and the advertising ID permission
+  (<code>com.google.android.gms.permission.AD_ID</code>) in order to serve ads.</strong>
+</p>
+
+<h2>9. Children</h2>
+<p>
+  The app is not directed at children under 13 and does not knowingly collect information from children.
+  Children should use the app under the supervision of a parent or guardian.
+</p>
+
+<h2>10. Availability</h2>
+<p>This app is distributed in <strong>Japan only</strong>.</p>
+
+<h2>11. Changes to this policy</h2>
+<p>
+  This policy may change as features are added.
+  <strong>If a future version changes how data is handled, this policy will be revised and this page
+  updated before that version is released.</strong>
+</p>
+
+<h2>12. Contact</h2>
+<p>For questions about this policy or the app, please use the contact address above.</p>
+
+<footer>
+  hajime kaihatsu — 拾人 -ひろいびと-
+</footer>
 
 </body>
 </html>
